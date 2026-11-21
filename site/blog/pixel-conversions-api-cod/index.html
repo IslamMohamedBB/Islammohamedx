@@ -93,7 +93,7 @@
 <p>Some store owners want to fire Purchase only after delivery, because that's when they get paid. I understand the instinct, but delivery happens days later, and Meta learns best from fast signals. I keep Purchase at submission, and I handle delivered revenue in my own reporting, which I explain in CPA, ROAS and delivered orders.</p>
 <h2 id="send-the-right-value-in-the-right-currency">Send the right value, in the right currency</h2>
 <p>The Purchase event should carry the real order value and the currency, EGP for Egyptian stores. Include the actual total for bundles and multiple quantities, not a default product price.</p>
-<p>This sounds obvious until it breaks. One account we looked at reported more than EGP 1 billion in purchase value from EGP 13,000 of spend, which can only be a tracking problem. That's why I always look at the value column next to the purchase count. I tell that story in the account that reported a billion pounds.</p>
+<p>This sounds obvious until it breaks. One account we looked at reported more than EGP 1 billion in purchase value from EGP 13,000 of spend, which can only be a tracking problem. That's why I always look at the value column next to the purchase count. I tell that story in <a href="/blog/pixel-bug-1-billion-egp/">the account that reported a billion pounds</a>.</p>
 <h2 id="use-both-the-pixel-and-the-conversions-api">Use both the Pixel and the Conversions API</h2>
 <p>The browser pixel misses events: ad blockers, privacy settings, slow connections that close before the script runs. The Conversions API sends the same events from the server, so Meta receives what the browser missed.</p>
 <p>The key is deduplication. Each order should send the same event ID from both the browser and the server, so Meta counts it once. Without that, your purchases double and your reported return becomes fiction.</p>
@@ -123,16 +123,16 @@
     <section class="related" aria-labelledby="rel-h">
       <h2 id="rel-h">Keep reading</h2>
       <div class="pcards">
+        <a class="pcard" href="/blog/pixel-bug-1-billion-egp/">
+<span class="pcard-k"><bdi>EGP 1B?</bdi></span>          <h3>The ad account that reported EGP 1 billion in sales (and why I left it out)</h3>
+          <span class="pcard-m"><time datetime="2026-11-21">21 November 2026</time><span>Numbers and lessons</span></span>
+        </a>
         <a class="pcard" href="/blog/meta-ads-cod-egypt-playbook/">
 <span class="pcard-k"><bdi>COD</bdi></span>          <h3>Meta ads for cash-on-delivery stores in Egypt: the playbook I actually use</h3>
           <span class="pcard-m"><time datetime="2026-11-21">21 November 2026</time><span>Meta ads playbook</span></span>
         </a>
         <a class="pcard" href="/blog/sales-vs-messages-objective/">
 <span class="pcard-k"><bdi>2 paths</bdi></span>          <h3>Sales objective or messages objective? How I choose for Egyptian brands</h3>
-          <span class="pcard-m"><time datetime="2026-11-21">21 November 2026</time><span>Meta ads playbook</span></span>
-        </a>
-        <a class="pcard" href="/blog/weekly-creative-testing/">
-<span class="pcard-k"><bdi>Weekly</bdi></span>          <h3>How I test creatives every week without burning the budget</h3>
           <span class="pcard-m"><time datetime="2026-11-21">21 November 2026</time><span>Meta ads playbook</span></span>
         </a>
       </div>
